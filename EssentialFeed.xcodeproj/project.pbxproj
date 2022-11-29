@@ -83,7 +83,7 @@
 			children = (
 				AB3FAC2D2935591F0086D6F1 /* EssentialFeed.h */,
 				AB3FAC2E2935591F0086D6F1 /* EssentialFeed.docc */,
-				AB3FAC4E29362DD50086D6F1 /* Feed Api */,
+				AB3FAC4E29362DD50086D6F1 /* Feed API */,
 				AB3FAC4829355B680086D6F1 /* Feed Feature */,
 			);
 			path = EssentialFeed;
@@ -92,7 +92,7 @@
 		AB3FAC382935591F0086D6F1 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				AB3FAC49293561A60086D6F1 /* RemoteFeedLoaderTests.swift */,
+				AB3FAC552936B0350086D6F1 /* Feed API */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -106,14 +106,22 @@
 			path = "Feed Feature";
 			sourceTree = "<group>";
 		};
-		AB3FAC4E29362DD50086D6F1 /* Feed Api */ = {
+		AB3FAC4E29362DD50086D6F1 /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
 				AB3FAC4F29362DF30086D6F1 /* RemoteFeedLoader.swift */,
 				AB3FAC532936A61C0086D6F1 /* FeedItemsMapper.swift */,
 				AB3FAC512936A5BA0086D6F1 /* HTTPClient.swift */,
 			);
-			path = "Feed Api";
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		AB3FAC552936B0350086D6F1 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				AB3FAC49293561A60086D6F1 /* RemoteFeedLoaderTests.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
