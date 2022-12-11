@@ -111,11 +111,11 @@
 		AB3FAC2C2935591F0086D6F1 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
+				ABB3F05D294655D600936155 /* README.md */,
 				AB3FAC2D2935591F0086D6F1 /* EssentialFeed.h */,
 				AB3FAC2E2935591F0086D6F1 /* EssentialFeed.docc */,
 				AB3FAC4E29362DD50086D6F1 /* Feed API */,
 				AB3FAC4829355B680086D6F1 /* Feed Feature */,
-				ABB3F05D294655D600936155 /* README.md */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
