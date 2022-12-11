@@ -21,6 +21,7 @@
 		AB3FAC5C2937D9F70086D6F1 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3FAC5B2937D9F70086D6F1 /* URLSessionHTTPClient.swift */; };
 		AB3FAC652937EAC10086D6F1 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB3FAC2A2935591F0086D6F1 /* EssentialFeed.framework */; };
 		ABB3F0562938A6CF00936155 /* EssentialFeedAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3FAC632937EAC10086D6F1 /* EssentialFeedAPIEndToEndTests.swift */; };
+		ABB3F05E294655D600936155 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ABB3F05D294655D600936155 /* README.md */; };
 		ABD3D7A72937F4FA009797A1 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3FAC592937BB530086D6F1 /* XCTestCase+MemoryLeakTracking.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		AB3FAC5B2937D9F70086D6F1 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		AB3FAC612937EAC10086D6F1 /* EssentialFeedAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EssentialFeedAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB3FAC632937EAC10086D6F1 /* EssentialFeedAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EssentialFeedAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		ABB3F05D294655D600936155 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				AB3FAC2E2935591F0086D6F1 /* EssentialFeed.docc */,
 				AB3FAC4E29362DD50086D6F1 /* Feed API */,
 				AB3FAC4829355B680086D6F1 /* Feed Feature */,
+				ABB3F05D294655D600936155 /* README.md */,
 			);
 			path = EssentialFeed;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB3F05E294655D600936155 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
