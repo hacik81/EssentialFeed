@@ -34,6 +34,7 @@
 		ABE5AB132958B67C00756705 /* FeedCacheTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB122958B67C00756705 /* FeedCacheTestHelpers.swift */; };
 		ABE5AB152958B7B500756705 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB142958B7B500756705 /* SharedTestHelpers.swift */; };
 		ABE5AB17295A21C000756705 /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB16295A21C000756705 /* FeedCachePolicy.swift */; };
+		ABE5AB192960A5F300756705 /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB182960A5F300756705 /* CodableFeedStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		ABE5AB122958B67C00756705 /* FeedCacheTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCacheTestHelpers.swift; sourceTree = "<group>"; };
 		ABE5AB142958B7B500756705 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		ABE5AB16295A21C000756705 /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
+		ABE5AB182960A5F300756705 /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				ABB3F0602946600400936155 /* CacheFeedUseCaseTests.swift */,
 				ABE5AB0B295212E900756705 /* LoadFeedFromCacheUseCaseTests.swift */,
 				ABE5AB102958B18D00756705 /* ValidateFeedCacheUseCaseTests.swift */,
+				ABE5AB182960A5F300756705 /* CodableFeedStoreTests.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE5AB192960A5F300756705 /* CodableFeedStoreTests.swift in Sources */,
 				ABE5AB132958B67C00756705 /* FeedCacheTestHelpers.swift in Sources */,
 				ABE5AB112958B18D00756705 /* ValidateFeedCacheUseCaseTests.swift in Sources */,
 				AB3FAC4A293561A60086D6F1 /* LoadFeedFromRemoteUseCaseTests.swift in Sources */,
