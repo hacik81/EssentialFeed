@@ -37,6 +37,7 @@
 		ABE5AB192960A5F300756705 /* CodableFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB182960A5F300756705 /* CodableFeedStoreTests.swift */; };
 		ABE5AB1B2968AD9F00756705 /* CodableFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB1A2968AD9F00756705 /* CodableFeedStore.swift */; };
 		ABE5AB1D296B3A3600756705 /* FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB1C296B3A3600756705 /* FeedStoreSpecs.swift */; };
+		ABE5AB1F296B3BA200756705 /* XCTestCase+FeedStoreSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB1E296B3BA200756705 /* XCTestCase+FeedStoreSpecs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		ABE5AB182960A5F300756705 /* CodableFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStoreTests.swift; sourceTree = "<group>"; };
 		ABE5AB1A2968AD9F00756705 /* CodableFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableFeedStore.swift; sourceTree = "<group>"; };
 		ABE5AB1C296B3A3600756705 /* FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpecs.swift; sourceTree = "<group>"; };
+		ABE5AB1E296B3BA200756705 /* XCTestCase+FeedStoreSpecs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedStoreSpecs.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +217,7 @@
 				ABE5AB102958B18D00756705 /* ValidateFeedCacheUseCaseTests.swift */,
 				ABE5AB182960A5F300756705 /* CodableFeedStoreTests.swift */,
 				ABE5AB1C296B3A3600756705 /* FeedStoreSpecs.swift */,
+				ABE5AB1E296B3BA200756705 /* XCTestCase+FeedStoreSpecs.swift */,
 			);
 			path = "Feed Cache";
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				ABE5AB0C295212E900756705 /* LoadFeedFromCacheUseCaseTests.swift in Sources */,
 				ABE5AB1D296B3A3600756705 /* FeedStoreSpecs.swift in Sources */,
 				AB3FAC5A2937BB530086D6F1 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
+				ABE5AB1F296B3BA200756705 /* XCTestCase+FeedStoreSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
