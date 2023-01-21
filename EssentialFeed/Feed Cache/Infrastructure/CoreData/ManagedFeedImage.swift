@@ -14,12 +14,14 @@ internal class ManagedFeedImage: NSManagedObject {
     @NSManaged internal var location: String?
     @NSManaged internal var url: URL
     @NSManaged internal var cache: ManagedCache
-    
-    internal var local: LocalFeedImage {
+}
+
+extension ManagedFeedImage {
+    var local: LocalFeedImage {
         return LocalFeedImage(id: id, description: imageDescription, location: location, url: url)
     }
     
-    internal static func images(from localFeed: [LocalFeedImage], in context: NSManagedObjectContext) -> NSOrderedSet {
+    static func images(from localFeed: [LocalFeedImage], in context: NSManagedObjectContext) -> NSOrderedSet {
         return NSOrderedSet(array: localFeed.map { local in
             let managed = ManagedFeedImage(context: context)
             managed.id = local.id
