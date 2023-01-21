@@ -44,6 +44,7 @@
 		ABE5AB28297C52A400756705 /* CoreDataFeedStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB27297C52A400756705 /* CoreDataFeedStoreTests.swift */; };
 		ABE5AB2A297C53C100756705 /* CoreDataFeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB29297C53C100756705 /* CoreDataFeedStore.swift */; };
 		ABE5AB2D297C561900756705 /* FeedStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB2B297C561900756705 /* FeedStore.xcdatamodeld */; };
+		ABE5AB32297C7FAC00756705 /* CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE5AB31297C7FAC00756705 /* CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		ABE5AB27297C52A400756705 /* CoreDataFeedStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStoreTests.swift; sourceTree = "<group>"; };
 		ABE5AB29297C53C100756705 /* CoreDataFeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataFeedStore.swift; sourceTree = "<group>"; };
 		ABE5AB2C297C561900756705 /* FeedStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FeedStore.xcdatamodel; sourceTree = "<group>"; };
+		ABE5AB31297C7FAC00756705 /* CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,8 +281,9 @@
 		ABE5AB2F297C7ECE00756705 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				ABE5AB29297C53C100756705 /* CoreDataFeedStore.swift */,
 				ABE5AB2B297C561900756705 /* FeedStore.xcdatamodeld */,
+				ABE5AB29297C53C100756705 /* CoreDataFeedStore.swift */,
+				ABE5AB31297C7FAC00756705 /* CoreDataHelpers.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				ABE5AB06294BCA6A00756705 /* RemoteFeedLoader.swift in Sources */,
 				AB3FAC5C2937D9F70086D6F1 /* URLSessionHTTPClient.swift in Sources */,
 				AB3FAC522936A5BA0086D6F1 /* HTTPClient.swift in Sources */,
+				ABE5AB32297C7FAC00756705 /* CoreDataHelpers.swift in Sources */,
 				ABE5AB05294BCA6A00756705 /* FeedItemsMapper.swift in Sources */,
 				ABE5AB2A297C53C100756705 /* CoreDataFeedStore.swift in Sources */,
 				AB3FAC4729355A3B0086D6F1 /* FeedLoader.swift in Sources */,
