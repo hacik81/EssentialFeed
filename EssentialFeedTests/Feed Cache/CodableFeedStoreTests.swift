@@ -45,7 +45,7 @@ final class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     }
     
     func test_retrieve_deliversFailureOnRetrievalError() {
-        let storeURL = testSpecificStoreURL()
+        let storeURL = specificStoreURLtesting()
         let sut = makeSUT(storeURL: storeURL)
         
         try! "invalid data".write(to: storeURL, atomically: false, encoding: .utf8)
@@ -54,7 +54,7 @@ final class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     }
     
     func test_retrieve_hasNoSideEffectsOnFailure() {
-        let storeURL = testSpecificStoreURL()
+        let storeURL = specificStoreURLtesting()
         let sut = makeSUT(storeURL: storeURL)
         
         try! "invalid data".write(to: storeURL, atomically: false, encoding: .utf8)
@@ -141,7 +141,7 @@ final class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     // MARK: - Helpers
     
     private func makeSUT(storeURL: URL? = nil, file: StaticString = #file, line: UInt = #line) -> FeedStore {
-        let sut = CodableFeedStore(storeURL: storeURL ?? testSpecificStoreURL())
+        let sut = CodableFeedStore(storeURL: storeURL ?? specificStoreURLtesting())
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
     }
@@ -155,10 +155,10 @@ final class CodableFeedStoreTests: XCTestCase, FailableFeedStoreSpecs {
     }
     
     private func deleteStoreArtifacts() {
-        try? FileManager.default.removeItem(at: testSpecificStoreURL())
+        try? FileManager.default.removeItem(at: specificStoreURLtesting())
     }
     
-    private func testSpecificStoreURL() -> URL {
+    private func specificStoreURLtesting() -> URL {
         cachesDirectory().appendingPathComponent("\(type(of: self)).store")
     }
     
