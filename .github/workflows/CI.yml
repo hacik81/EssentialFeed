@@ -14,6 +14,7 @@ jobs:
     runs-on: macos-latest
     strategy:
       matrix:
+        arch: [arm64]
         run-config:
           - { scheme: 'CI_macOS', destination: 'platform=macOS' }
           - { scheme: 'CI_iOS', destination: 'platform=iOS Simulator,OS=15.0,name=iPhone 13' }
