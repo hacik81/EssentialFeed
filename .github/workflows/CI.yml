@@ -10,19 +10,16 @@ on:
     branches: [ "production" ]
 
 jobs:
-  build-and-test:
-
+  macOS:
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v3
     - name: Run tests for macOS
       run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme CI_macOS CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
-
-  build-and-test:
-
+   
+  iOS:
     runs-on: ios-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Run tests for iOS
