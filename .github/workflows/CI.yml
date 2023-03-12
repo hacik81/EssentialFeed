@@ -16,7 +16,7 @@ jobs:
       matrix:
         run-config:
           - { scheme: 'CI_macOS', destination: 'platform=macOS' }
-          - { scheme: 'CI_iOS', destination: 'platform=iOS Simulator,OS=16.0,name=iPhone 14' }
+          - { scheme: 'CI_iOS', destination: 'platform=iOS Simulator,OS=15.0,name=iPhone 13' }
     steps:
     - uses: actions/checkout@v3
     - name: Run tests for macOS
