@@ -1,7 +1,7 @@
 # This workflow will build a Swift project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
 
-name: CI_macOS
+name: CI
 
 on:
   push:
@@ -16,5 +16,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Run tests
+    - name: Run tests for macOS
       run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme CI_macOS CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
+
+  build-and-test:
+
+    runs-on: ios-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Run tests for iOS
+      run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme CI_iOS CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
