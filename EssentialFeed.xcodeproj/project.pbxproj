@@ -193,7 +193,7 @@
 				AB3FAC622937EAC10086D6F1 /* EssentialFeedAPIEndToEndTests */,
 				ABE5AB3C297DA0F000756705 /* EssentialFeedCacheIntegrationTests */,
 				ABE16C3529BE1E3E00F9BD69 /* EssentialFeediOS */,
-				ABE16C4129BE1E3F00F9BD69 /* EssentialFeediOSTests */,
+				AB872B9129BE4C99001C3A75 /* EssentialFeediOSTests */,
 				AB3FAC2B2935591F0086D6F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -281,6 +281,13 @@
 			path = EssentialFeedAPIEndToEndTests;
 			sourceTree = "<group>";
 		};
+		AB872B9129BE4C99001C3A75 /* EssentialFeediOSTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EssentialFeediOSTests;
+			sourceTree = "<group>";
+		};
 		ABB3F05F29465FC800936155 /* Feed Cache */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,13 +320,6 @@
 				ABE16C3729BE1E3E00F9BD69 /* EssentialFeediOS.docc */,
 			);
 			path = EssentialFeediOS;
-			sourceTree = "<group>";
-		};
-		ABE16C4129BE1E3F00F9BD69 /* EssentialFeediOSTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
 		ABE5AB0D295214CA00756705 /* Helpers */ = {
