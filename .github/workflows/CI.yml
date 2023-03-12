@@ -10,17 +10,18 @@ on:
     branches: [ "production" ]
 
 jobs:
-  macOS:
+  build:
     runs-on: macos-latest
-
+    strategy:
+      matrix:
+        run-config:
+          - { scheme: 'CI_macOS', destination: 'platform=macOS' }
+          - { scheme: 'CI_iOS', destination: 'platform=iOS Simulator,OS=16.0,name=iPhone 14' }
     steps:
     - uses: actions/checkout@v3
     - name: Run tests for macOS
-      run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme CI_macOS CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
+      run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}' CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
    
-  iOS:
-    runs-on: ios-latest
-    steps:
     - uses: actions/checkout@v3
     - name: Run tests for iOS
-      run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme CI_iOS CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
+      run: xcodebuild clean build test -project EssentialFeed.xcodeproj -scheme '${{ matrix.run-config['scheme'] }}' CODE_SIGN_IDENTITY="" CEDE_SIGN_REQUIRED=NO
